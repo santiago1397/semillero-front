@@ -1,0 +1,55 @@
+.wrapperRight {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: #ECF0F1;
+
+    h3 {
+        border-bottom: 2px solid black;
+        padding: 20px 10px 10px 10px;
+
+    }
+
+    .wrapperRightBottom {
+        display: flex;
+        width: 100%;
+        flex: 1 1 auto;
+
+        .chartWrapper {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ECF0F1;
+        }
+
+        .dataWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 auto;
+            flex-direction: column;
+            background-color: azure;
+            border-radius: 20px;
+            margin: 10px;
+
+
+            .total{
+                padding: 12px;
+            }
+
+            .data {
+                display: grid;
+                font-size: 15px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                grid-column-gap: 10px;
+                grid-row-gap: 2px;
+            }
+        }
+    }
+
+}

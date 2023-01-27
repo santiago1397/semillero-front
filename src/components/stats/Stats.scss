@@ -1,0 +1,51 @@
+.stats {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+
+
+    .title {
+        background-color: #141115;
+        padding: 10px;
+        text-align: center;
+
+        h2{
+            color: white;
+        }
+    }
+
+    .wrapper {
+        flex: 1 1 auto;
+        display: flex;
+        
+    
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex: 0 1 auto;
+            background-color: #141115;
+            list-style-type: none;
+
+            li {
+                border: 1px solid #ECF0F1;
+                color: white;
+                margin-bottom: 2px;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+
+                &:hover{
+                    color: #141115;
+                    background-color: #ECF0F1;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+
+    }
+}

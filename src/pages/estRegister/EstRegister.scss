@@ -1,0 +1,282 @@
+.semilleros {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(9, 109, 121, 0.7511379551820728) 100%);
+    position: relative;
+    padding-bottom: 50px;
+
+    .cintillo {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .cintilloLogo {
+            width: 500px;
+        }
+
+        .mincytLogo {
+            width: 200px;
+        }
+
+    }
+
+    .mask {}
+
+
+    .formWrapper {
+        width: 80%;
+        border-radius: 30px;
+        padding: 5px 30px 50px 30px;
+        background: rgba(255, 255, 255, 0.4);
+
+        .titleWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+                position: relative;
+                opacity: 1.0;
+                padding: 10px;
+                border-left: 3px solid blueviolet;
+            }
+
+            .semilleroLogo {
+                width: 120px;
+            }
+        }
+
+        .registerForm {
+            margin-top: 20px;
+            font-size: 1.2em;
+
+            .inputGroup {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .labelInput {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        padding-top: 15px;
+                        padding-bottom: 4px;
+                    }
+
+                    input,
+                    select {
+                        padding: 8px;
+                        border: none;
+                        outline: none;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+
+            .labelInputDate {
+                label {
+                    margin-right: 10px;
+                }
+
+                input {
+                    padding: 5px;
+                    border: none;
+                    font-size: 0.9em;
+                }
+
+                margin-bottom: 20px;
+            }
+
+            input,
+            select {
+                padding: 8px;
+                border: none;
+                outline: none;
+                font-size: 0.9em;
+            }
+
+            h2 {
+                margin-top: 100px;
+                margin-bottom: 30px;
+            }
+
+            .questionGroup {
+                margin-top: 40px;
+
+                .answerGroup {
+                    display: flex;
+                    justify-content: flex;
+                    margin-top: 15px;
+
+                    .answer {
+                        display: flex;
+                        margin-right: 18px;
+
+                        p {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .actividadesGroup {
+                    margin-top: 50px;
+
+                    .actividades {
+                        margin-top: 20px;
+
+                        .actividad {
+                            display: flex;
+                            margin-top: 10px;
+
+
+                            p {
+                                padding-right: 15px;
+                            }
+                        }
+
+                        .indique {
+                            margin-top: 25px;
+
+                            input {
+                                margin-top: 5px;
+                                padding: 8px;
+                                border: none;
+                                border-bottom: 1px solid black;
+                                outline: none;
+                                font-size: 0.9em;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .projectData {
+                margin-top: 25px;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 15px;
+
+                .projectField {
+                    width: 40%;
+                    gap: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    input,
+                    textarea {
+                        padding: 8px;
+                        border: none;
+                        outline: none;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+
+            .actividadesGroup {
+                margin-top: 50px;
+
+                .actividades {
+                    margin-top: 20px;
+
+                    .actividad {
+                        display: flex;
+                        margin-top: 10px;
+
+
+                        p {
+                            padding-right: 15px;
+                        }
+                    }
+
+                    .indique {
+                        margin-top: 25px;
+
+                        input {
+                            margin-top: 5px;
+                            padding: 8px;
+                            border: none;
+                            border-bottom: 1px solid black;
+                            outline: none;
+                            font-size: 0.9em;
+
+                        }
+                    }
+
+                    .indique {
+                        margin-top: 25px;
+
+                        input {
+                            margin-top: 5px;
+                            padding: 8px;
+                            border: none;
+                            border-bottom: 1px solid black;
+                            outline: none;
+                            font-size: 0.9em;
+
+                        }
+                    }
+                }
+            }
+
+            .registerButton {
+                margin-top: 30px;
+                padding: 10px;
+                border: 2px solid #00262d;
+                border-radius: 15px;
+                font-size: 1em;
+                background-color: #4A949C;
+                color: #00262d;
+                transition: ease 0.5s;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: #00262d;
+                    color: #4A949C;
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+    }
+
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type="radio"]::before {}
+
+    input[type="radio"]:checked::before {}
+
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .semilleros {
+
+        .cintillo{
+            display: none;
+    
+            .cintilloLogo {
+                width: 500px;
+            }
+    
+            .mincytLogo {
+                width: 200px;
+            }
+    
+        }
+    }
+  }

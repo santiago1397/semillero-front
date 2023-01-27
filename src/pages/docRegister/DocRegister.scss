@@ -1,0 +1,99 @@
+.register {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .registerLeft {
+        width: 25vw;
+        background-color: blue;
+        background-image: url("../../../public/assets/register-img.jpg");
+        background-position-x: 90%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .registerRight {
+        position: relative;
+        width: 75vw;
+        background-color: #EFF0F2;
+        padding: 1.2em;
+
+        .registerRightTop {
+
+            h2 {
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+
+            img {
+                border-radius: 30%;
+                width: 10%;
+            }
+        }
+
+        .registerRightCenter {
+
+            .fieldsWrapper {
+                display: flex;
+
+                .section {
+                    margin-right: 30px;
+
+                    .infoFields {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px 0 10px 0;
+
+                        label {
+                            margin-bottom: 1px;
+                            font-size: 1.2em;
+                        }
+
+                        input {
+                            font-size: 1em;
+                            padding: 3px 5px 3px 5px;
+                            border: 1px solid black;
+                            border-radius: 5px;
+
+                            &:hover {
+                                box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottomWrapper {
+                margin-top: 10px;
+
+                button {
+                    width: 10%;
+                    padding: 8px;
+                    color: white;
+                    font-weight: bold;
+                    background-color: #2C3A5D;
+                    border: 1px solid black;
+                    border-radius: 15px;
+
+                    &:hover {
+                        box-shadow: 0px 0px 7px 1px rgba(44, 58, 93, 0.25);
+                        cursor: pointer;
+                    }
+                }
+
+                p {
+                    margin-top: 5px;
+
+                    .registerLoginButton {
+
+                        color: #2C3A5D;
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
